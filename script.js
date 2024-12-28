@@ -24,7 +24,7 @@ function render() {
     arr.forEach((card) => {
 
         const cardDiv = document.createElement("div");
-        cardDiv.className = "flex gap-2 max-w-full mt-4 bg-white rounded-lg p-2";
+        cardDiv.className = "flex gap-5 max-w-full mt-4 bg-white rounded-lg p-2";
 
         const imgDiv = document.createElement('div')  //imgDivCon Parent
         imgDiv.className = 'w-[30%] rounded-lg overflow-hidden'
