@@ -48,11 +48,11 @@ function render() {
         const meta = document.createElement("div");
         meta.className = "mt-3 flex justify-between text-gray-700 text-sm";
         const rateDiv = document.createElement('div');
-        rateDiv.className = 'flex gap-1'
+        rateDiv.className = 'flex gap-1 items-center'
 
         let x = card.rating;
 
-        for (let i = 0; i <5; i++) {
+        for (let i = 0; i < 5; i++) {
             const rate = document.createElement('span');
             // rate.innerHTML = `<i class="fa-solid fa-star"></i>`
             rate.innerHTML = `<span class="text-base material-symbols-outlined">star</span>`
@@ -64,10 +64,23 @@ function render() {
             rateDiv.appendChild(rate)
         }
 
+        const star = document.createElement('strong')
+        star.innerText = card.rating
+        star.className = 'text-sm ml-2'
+        const vote = document.createElement('span')
+        // vote.innerText = `(${card.votes})`
+        vote.innerText = `(${Math.floor(Math.random() * 10000)})`
+        vote.className = "text-sm text-gray-500"
+
+        rateDiv.append(star, vote)
+
+        // <strong class="text-base">3</strong>
+        // <span class="text-base text-gray-500">(294)</span>
+
         const level = document.createElement('span');
         level.className = 'capitalize text-slate-500 content-center text-xs px-2 py-1 font-extralight bg-slate-200 rounded-md'
         level.innerText = card.level
-        
+
 
         meta.append(rateDiv, level);
 
