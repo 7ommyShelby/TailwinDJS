@@ -24,10 +24,10 @@ function render() {
     arr.forEach((card) => {
 
         const cardDiv = document.createElement("div");
-        cardDiv.className = "flex gap-5 max-w-full mt-4 bg-white rounded-lg p-2";
+        cardDiv.className = "xl:flex-row flex flex-col gap-5 max-w-full mt-4 bg-white rounded-lg p-2";
 
         const imgDiv = document.createElement('div')  //imgDivCon Parent
-        imgDiv.className = 'w-[30%] rounded-lg overflow-hidden'
+        imgDiv.className = 'xl:w-[30%] w-full rounded-lg overflow-hidden'
 
         const imgCon = document.createElement('img') //imgRaw child
         imgCon.className = 'h-full w-full'
@@ -35,20 +35,20 @@ function render() {
 
 
         const contentDiv = document.createElement("div");
-        contentDiv.className = "w-[70%]";
+        contentDiv.className = "lg:w-[70%] w-full";
 
         const heading = document.createElement("h2");
         heading.innerHTML = `${card.heading}`;
-        heading.className = "font-semibold text-lg";
+        heading.className = "font-semibold text-base lg:text-lg";
 
         const para = document.createElement("p");
         para.textContent = card.para;
-        para.className = "text-slate-500 text-sm mt-1";
+        para.className = "text-slate-500 text-xs lg:text-sm mt-1";
 
         const meta = document.createElement("div");
-        meta.className = "mt-3 flex justify-between text-gray-700 text-sm";
+        meta.className = "mt-3 flex flex-wrap justify-between text-gray-700 text-sm";
         const rateDiv = document.createElement('div');
-        rateDiv.className = 'flex gap-1 items-center'
+        rateDiv.className = 'flex flex-wrap gap-1 items-center'
 
         let x = card.rating;
 
