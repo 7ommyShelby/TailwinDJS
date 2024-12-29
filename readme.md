@@ -43,8 +43,7 @@ This project is designed to showcase the power of TailwindCSS in creating respon
 ### Desktop View
 ![Desktop View](ss1.png)
 
-### Mobile View
-![Mobile View](screenshots/mobile-view.png)
+
 
 ---
 
@@ -53,7 +52,7 @@ This project is designed to showcase the power of TailwindCSS in creating respon
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/7ommyShelby/TailwinDJS.git
    ```
 
 2. Navigate to the project folder:
